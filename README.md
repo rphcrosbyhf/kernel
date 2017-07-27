@@ -6,6 +6,10 @@ Simple kernel for running tiny microservices entirely in PHP.
 
 `composer require phlux/kernel`
 
+## Requirements
+
+- http://php.net/manual/en/book.pcntl.php
+
 ## Example
 
 ```
