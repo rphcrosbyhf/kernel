@@ -21,7 +21,7 @@ final class JsonDecodingMiddleware implements MiddlewareInterface
             return $next($request, $response);
         }
 
-        $decoded = json_decode((string) $request->getBody(), true);
+        $decoded = json_decode((string) $request->getBody());
 
         if (JSON_ERROR_NONE !== json_last_error()) {
             throw new BadRequestException();
