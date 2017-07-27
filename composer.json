@@ -1,0 +1,27 @@
+{
+  "name": "phlux/kernel",
+  "description": "A microservice kernel",
+  "license": "Proprietary",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Richard Crosby",
+      "email": "rcrosby256@gmail.com",
+      "role": "Owner"
+    }
+  ],
+  "require": {
+    "php": "~7.1",
+    "react/http": "~0.7",
+    "react/promise-stream": "~0.1",
+    "league/route": "~3.0",
+    "league/container": "~2.4",
+    "monolog/monolog": "~1.23",
+    "mkraemer/react-pcntl": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phlux\\Kernel\\": "src/"
+    }
+  }
+}
